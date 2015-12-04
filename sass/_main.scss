@@ -1,0 +1,36 @@
+/* Main file */
+
+@import "compass/css3/transition";
+
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom, rgba(255,25,0,0.3), rgba(0, 0, 0, 0.3)), url("../img/bg_departure.jpg");
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Open Sans', sans-serif;
+  @include transition(background-position 3s cubic-bezier(.15,.9,.59,.98));
+}
+
+.linkEffect {
+  padding-top: 50px;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid white;
+  color: #FFF;
+}
