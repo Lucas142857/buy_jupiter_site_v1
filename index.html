@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <link rel="stylesheet" href="stylesheets/screen.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	</head>
+  <body>
+    <div id="wrapper">
+      <header class="linkEffect">
+        <p>
+          <a href="#" id="bg-transform">
+            Background + 1000px
+          </a>
+        </p>
+      </header>
+      <section>
+        <article>
+          <h1>Test article</h1>
+        </article>
+      </section>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#bg-transform').click(function() {
+          $('#wrapper').css('background-position', '0 0, -1000px 0');
+        });
+      });
+    </script>
+  </body>
+</html>
