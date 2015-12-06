@@ -22,6 +22,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 3px 25px;
+  padding-bottom: 25px;
   /*background-image: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgba(46, 66, 65, 0.5)), linear-gradient(to top right, rgba(0,0,0,0.3), rgba(255, 0, 0, 0.2)), url("../img/bg_departure.jpg");*/
   background-image: url("../img/bg_departure.jpg");
   background-position: 0 0;
@@ -30,6 +31,10 @@ html, body {
   background-repeat: no-repeat;
   font-family: 'Open Sans', sans-serif;
   @include transition(background-position 3s cubic-bezier(.15,.9,.59,.98));
+  @include bp-small {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
 
 #logo {
@@ -42,6 +47,8 @@ html, body {
 }
 
 #content {
+  max-width: 1000px;
+  margin: auto;
   display: flex;
   flex-direction: row;
   @include bp-medium {
@@ -50,11 +57,14 @@ html, body {
 }
 
 #player {
+  width: 300px;
+  
+  @include bp-medium {
+    margin: auto;
+  }
+  
   @include bp-small {
     width: 100%;
-  }
-  @include bp-large {
-    width: 330px;
   }
   
   iframe {
@@ -71,14 +81,15 @@ html, body {
 }
 
 #storyline {
+  background-color: rgba(0,0,0,0.2);
   @include bp-large {
-    max-width: 72%;
+    max-width: 70%;
   }
 }
 
 .marginStoryline {
   @include bp-large {
-    margin-left: 330px;
+    margin-left: 300px;
   }
 }
 
@@ -89,6 +100,10 @@ article {
   p {
     margin: 10px;
     text-align: justify;
+    
+    @include bp-small {
+      margin: 3px;
+    }
   }
 }
 
