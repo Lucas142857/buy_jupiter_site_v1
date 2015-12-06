@@ -94,16 +94,17 @@ html, body {
   padding: 3px 25px;
   padding-bottom: 25px;
   /*background-image: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgba(46, 66, 65, 0.5)), linear-gradient(to top right, rgba(0,0,0,0.3), rgba(255, 0, 0, 0.2)), url("../img/bg_departure.jpg");*/
-  background-image: url("../img/bg_departure.jpg");
+  background-image: url("../img/bg_departure_bis.jpg");
   background-position: 0 0;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Open Sans', sans-serif;
-  -moz-transition: background-position 3s cubic-bezier(0.15, 0.9, 0.59, 0.98);
-  -o-transition: background-position 3s cubic-bezier(0.15, 0.9, 0.59, 0.98);
-  -webkit-transition: background-position 3s cubic-bezier(0.15, 0.9, 0.59, 0.98);
-  transition: background-position 3s cubic-bezier(0.15, 0.9, 0.59, 0.98);
+  /*@include transition(background-position 3s cubic-bezier(.15,.9,.59,.98));*/
+  -moz-transition: background-position 3s ease-in-out;
+  -o-transition: background-position 3s ease-in-out;
+  -webkit-transition: background-position 3s ease-in-out;
+  transition: background-position 3s ease-in-out;
 }
 @media only screen and (max-width: 420px) {
   /* line 19, ../sass/_main.scss */
@@ -113,18 +114,18 @@ html, body {
   }
 }
 
-/* line 40, ../sass/_main.scss */
+/* line 41, ../sass/_main.scss */
 #logo {
   padding: 1em;
 }
 
-/* line 44, ../sass/_main.scss */
+/* line 45, ../sass/_main.scss */
 #logo img {
   opacity: 0.85;
   max-width: 100%;
 }
 
-/* line 49, ../sass/_main.scss */
+/* line 50, ../sass/_main.scss */
 #content {
   max-width: 1000px;
   margin: auto;
@@ -132,85 +133,85 @@ html, body {
   flex-direction: row;
 }
 @media only screen and (max-width: 899px) {
-  /* line 49, ../sass/_main.scss */
+  /* line 50, ../sass/_main.scss */
   #content {
     flex-direction: column;
   }
 }
 
-/* line 59, ../sass/_main.scss */
+/* line 60, ../sass/_main.scss */
 #player {
   width: 300px;
 }
 @media only screen and (max-width: 899px) {
-  /* line 59, ../sass/_main.scss */
+  /* line 60, ../sass/_main.scss */
   #player {
     margin: auto;
   }
 }
 @media only screen and (max-width: 420px) {
-  /* line 59, ../sass/_main.scss */
+  /* line 60, ../sass/_main.scss */
   #player {
     width: 100%;
   }
 }
 @media only screen and (min-width: 900px) {
-  /* line 70, ../sass/_main.scss */
+  /* line 71, ../sass/_main.scss */
   #player iframe {
     width: 100%;
   }
 }
 @media only screen and (max-width: 899px) {
-  /* line 70, ../sass/_main.scss */
+  /* line 71, ../sass/_main.scss */
   #player iframe {
     width: auto;
   }
 }
 @media only screen and (max-width: 420px) {
-  /* line 70, ../sass/_main.scss */
+  /* line 71, ../sass/_main.scss */
   #player iframe {
     width: 100%;
   }
 }
 
-/* line 83, ../sass/_main.scss */
+/* line 84, ../sass/_main.scss */
 #storyline {
   background-color: rgba(0, 0, 0, 0.2);
 }
 @media only screen and (min-width: 900px) {
-  /* line 83, ../sass/_main.scss */
+  /* line 84, ../sass/_main.scss */
   #storyline {
     max-width: 70%;
   }
 }
 
 @media only screen and (min-width: 900px) {
-  /* line 90, ../sass/_main.scss */
+  /* line 91, ../sass/_main.scss */
   .marginStoryline {
     margin-left: 300px;
   }
 }
 
-/* line 96, ../sass/_main.scss */
+/* line 97, ../sass/_main.scss */
 article {
   color: #ddd;
   font-weight: 400;
   letter-spacing: 0.5px;
 }
-/* line 100, ../sass/_main.scss */
+/* line 101, ../sass/_main.scss */
 article p {
   margin: 10px;
   text-align: justify;
 }
 @media only screen and (max-width: 420px) {
-  /* line 100, ../sass/_main.scss */
+  /* line 101, ../sass/_main.scss */
   article p {
     margin: 3px;
   }
 }
 
 @media only screen and (min-width: 900px) {
-  /* line 110, ../sass/_main.scss */
+  /* line 111, ../sass/_main.scss */
   .floating {
     position: fixed;
     top: 20px;
