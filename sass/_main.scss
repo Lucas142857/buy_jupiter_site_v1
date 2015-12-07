@@ -35,7 +35,7 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   /*@include transition(background-position 3s cubic-bezier(.15,.9,.59,.98));*/
   /*@include transition(background-position 3s ease-in-out);*/
-  @include animation(bg-anim 60s linear infinite);
+  @include animation(bg-anim 120s linear infinite);
   @include bp-small {
     padding-left: 8px;
     padding-right: 8px;
