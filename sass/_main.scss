@@ -2,6 +2,8 @@
 
 @import "compass/css3/transition";
 @import "compass/css3/animation";
+@import "compass/css3/filter";
+@import "compass/css3/border-radius";
 @import "partials/mixins";
 
 * {
@@ -25,15 +27,15 @@ html, body {
   padding: 3px 25px;
   padding-bottom: 25px;
   /*background-image: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgba(46, 66, 65, 0.5)), linear-gradient(to top right, rgba(0,0,0,0.3), rgba(255, 0, 0, 0.2)), url("../img/bg_departure.jpg");*/
-  background-image: url("../img/bg_departure_bis.jpg");
+  background-image: url("../img/siteback.jpg");
   background-position: 0 0;
   background-attachment: fixed;
-  background-size: 120% 100%;
-  background-repeat: no-repeat;
+  /*background-size: 120% 100%;*/
+  background-repeat: repeat-x;
   font-family: 'Open Sans', sans-serif;
   /*@include transition(background-position 3s cubic-bezier(.15,.9,.59,.98));*/
-  @include transition(background-position 3s ease-in-out);
-  @include animation(bg-anim 14s linear infinite);
+  /*@include transition(background-position 3s ease-in-out);*/
+  @include animation(bg-anim 60s linear infinite);
   @include bp-small {
     padding-left: 8px;
     padding-right: 8px;
@@ -46,8 +48,9 @@ html, body {
 }
 
 #logo img {
-  opacity: 0.85;
+  opacity: 0.9;
   max-width: 100%;
+  @include animation(logo-anim 18s linear infinite);
 }
 
 #content {
@@ -85,7 +88,8 @@ html, body {
 }
 
 #storyline {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.4);
+  @include border-radius(4px);
   @include bp-large {
     max-width: 70%;
   }
@@ -119,7 +123,18 @@ article {
 }
 
 @include keyframes(bg-anim) {
-  0% { background-position: 0% 0% }
-  50% { background-position: 20% 0% }
-  100% { background-position: 0% 0% }
+  from { background-position: 0% 0%; }
+  to { background-position: -5331px 0%; }
+}
+
+@include keyframes(logo-anim) {
+  0%, 94%, 100% { @include filter(blur(0px)) }
+  95% { @include filter(blur(1px)) }
+  95.5% { @include filter(blur(2px)) }
+  96% { @include filter(blur(3px)) }
+  96.5% { @include filter(blur(4px)) }
+  97% { @include filter(blur(3px)) }
+  97.5% { @include filter(blur(2px)) }
+  98% { @include filter(blur(1px)) }
+  98.5% { @include filter(blur(0px)) }
 }
