@@ -1,6 +1,7 @@
 /* Main file */
 
 @import "compass/css3/transition";
+@import "compass/css3/animation";
 @import "partials/mixins";
 
 * {
@@ -27,14 +28,16 @@ html, body {
   background-image: url("../img/bg_departure_bis.jpg");
   background-position: 0 0;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 120% 100%;
   background-repeat: no-repeat;
   font-family: 'Open Sans', sans-serif;
   /*@include transition(background-position 3s cubic-bezier(.15,.9,.59,.98));*/
   @include transition(background-position 3s ease-in-out);
+  @include animation(bg-anim 14s linear infinite);
   @include bp-small {
     padding-left: 8px;
     padding-right: 8px;
+    background-size: cover;
   }
 }
 
@@ -113,4 +116,10 @@ article {
     position: fixed;
     top: 20px;
   }
+}
+
+@include keyframes(bg-anim) {
+  0% { background-position: 0% 0% }
+  50% { background-position: 20% 0% }
+  100% { background-position: 0% 0% }
 }
