@@ -56,11 +56,24 @@ html, body {
   @include animation(logo-anim 18s linear infinite);
 }
 
-.shipA {
-  /*position: absolute;
-  width: 68px;
-  height: 273px;
-  background-image: url("../img/shipA.png");*/
+#imgDep {
+  @include bp-inter {
+    width: 60px;
+  }
+}
+
+#imgRture {
+  @include bp-inter {
+    width: 118.5px;
+  }
+}
+
+#shipA {
+  margin-bottom: -235px;
+  @include bp-inter {
+    margin-bottom: -178px;
+    width: 45px;
+  }
 }
 
 #content {

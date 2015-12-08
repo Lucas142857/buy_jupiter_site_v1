@@ -12,6 +12,12 @@
   }
 }
 
+@mixin bp-inter {
+  @media only screen and (max-width: 450px) {
+    @content;
+  }
+}
+
 @mixin bp-small {
   @media only screen and (max-width: 350px) {
     @content;
