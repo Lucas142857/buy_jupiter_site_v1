@@ -102,9 +102,9 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   /*@include transition(background-position 3s cubic-bezier(.15,.9,.59,.98));*/
   /*@include transition(background-position 3s ease-in-out);*/
-  -moz-animation: bg-anim 120s linear infinite;
-  -webkit-animation: bg-anim 120s linear infinite;
-  animation: bg-anim 120s linear infinite;
+  -moz-animation: bg-anim 145s linear infinite;
+  -webkit-animation: bg-anim 145s linear infinite;
+  animation: bg-anim 145s linear infinite;
 }
 @media only screen and (max-width: 350px) {
   /* line 22, ../sass/_main.scss */
