@@ -6,6 +6,8 @@
 @import "compass/css3/border-radius";
 @import "partials/mixins";
 
+$anim-desktop: shipA-anim-desktop 8s 1 ease-in-out;
+
 * {
   text-align: center;
   box-sizing: border-box;
@@ -13,6 +15,25 @@
 
 html, body {
   background-color: #000;
+}
+
+body {
+  overflow: hidden;
+}
+
+body::-webkit-scrollbar
+{
+  width: 10px;  /* for vertical scrollbars */
+}
+
+body::-webkit-scrollbar-track
+{
+  background: rgba(76, 76, 76, 0.8);
+}
+
+body::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .reveal {
@@ -58,23 +79,47 @@ html, body {
 
 #imgDep {
   @include bp-inter {
-    width: 60px;
-  }
-}
-
-#imgRture {
-  @include bp-inter {
-    width: 118.5px;
+    width: 220px;
   }
 }
 
 #shipA {
-  margin-bottom: -235px;
-  z-index: 4;
-  @include bp-inter {
-    margin-bottom: -178px;
-    width: 45px;
+  position: absolute;
+  left: 50%;
+  
+  @include bp-large {
+    margin-left: -68px;
+    top: 192px;
+    @include animation($anim-desktop);
   }
+  
+  @include bp-medium {
+    margin-left: -68px;
+    top: 192px;
+    @include animation($anim-desktop);
+  }
+  
+  @include bp-inter {
+    margin-left: -53px;
+    width: 50px;
+    top: 192px;
+    @include animation($anim-desktop);
+  }
+  
+  @include bp-small {
+    margin-left: -53px;
+    top: 183px;
+    @include animation(shipA-anim-small 5s 1 ease-in-out);
+  }
+}
+
+#shipOverlap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background: rgba(0,0,0,0);
 }
 
 #content {
@@ -165,4 +210,14 @@ article {
   97.5% { @include filter(blur(2px)) }
   98% { @include filter(blur(1px)) }
   98.5% { @include filter(blur(0px)) }
+}
+
+@include keyframes(shipA-anim-desktop) {
+  from { top: 120%; }
+  to { top: 192px; }
+}
+
+@include keyframes(shipA-anim-small) {
+  from { top: 120%; }
+  to { top: 180px; }
 }

@@ -69,23 +69,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Main file */
 /* Mixins */
-/* line 9, ../sass/_main.scss */
+/* line 11, ../sass/_main.scss */
 * {
   text-align: center;
   box-sizing: border-box;
 }
 
-/* line 14, ../sass/_main.scss */
+/* line 16, ../sass/_main.scss */
 html, body {
   background-color: #000;
 }
 
-/* line 18, ../sass/_main.scss */
+/* line 20, ../sass/_main.scss */
+body {
+  overflow: hidden;
+}
+
+/* line 24, ../sass/_main.scss */
+body::-webkit-scrollbar {
+  width: 10px;
+  /* for vertical scrollbars */
+}
+
+/* line 29, ../sass/_main.scss */
+body::-webkit-scrollbar-track {
+  background: rgba(76, 76, 76, 0.8);
+}
+
+/* line 34, ../sass/_main.scss */
+body::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 39, ../sass/_main.scss */
 .reveal {
   display: none;
 }
 
-/* line 22, ../sass/_main.scss */
+/* line 43, ../sass/_main.scss */
 #wrapper {
   overflow: auto;
   width: 100%;
@@ -107,7 +128,7 @@ html, body {
   animation: bg-anim 145s linear infinite;
 }
 @media only screen and (max-width: 350px) {
-  /* line 22, ../sass/_main.scss */
+  /* line 43, ../sass/_main.scss */
   #wrapper {
     padding-left: 8px;
     padding-right: 8px;
@@ -115,16 +136,16 @@ html, body {
   }
 }
 
-/* line 46, ../sass/_main.scss */
+/* line 67, ../sass/_main.scss */
 #logo {
   padding: 1em;
 }
-/* line 48, ../sass/_main.scss */
+/* line 69, ../sass/_main.scss */
 #logo p {
   margin-top: 5px;
 }
 
-/* line 53, ../sass/_main.scss */
+/* line 74, ../sass/_main.scss */
 #logo img {
   opacity: 0.9;
   max-width: 100%;
@@ -134,33 +155,70 @@ html, body {
 }
 
 @media only screen and (max-width: 450px) {
-  /* line 59, ../sass/_main.scss */
+  /* line 80, ../sass/_main.scss */
   #imgDep {
-    width: 60px;
+    width: 220px;
   }
 }
 
-@media only screen and (max-width: 450px) {
-  /* line 65, ../sass/_main.scss */
-  #imgRture {
-    width: 118.5px;
-  }
-}
-
-/* line 71, ../sass/_main.scss */
+/* line 86, ../sass/_main.scss */
 #shipA {
-  margin-bottom: -235px;
-  z-index: 4;
+  position: absolute;
+  left: 50%;
+}
+@media only screen and (min-width: 900px) {
+  /* line 86, ../sass/_main.scss */
+  #shipA {
+    margin-left: -68px;
+    top: 192px;
+    -moz-animation: shipA-anim-desktop 8s 1 ease-in-out;
+    -webkit-animation: shipA-anim-desktop 8s 1 ease-in-out;
+    animation: shipA-anim-desktop 8s 1 ease-in-out;
+  }
+}
+@media only screen and (max-width: 899px) {
+  /* line 86, ../sass/_main.scss */
+  #shipA {
+    margin-left: -68px;
+    top: 192px;
+    -moz-animation: shipA-anim-desktop 8s 1 ease-in-out;
+    -webkit-animation: shipA-anim-desktop 8s 1 ease-in-out;
+    animation: shipA-anim-desktop 8s 1 ease-in-out;
+  }
 }
 @media only screen and (max-width: 450px) {
-  /* line 71, ../sass/_main.scss */
+  /* line 86, ../sass/_main.scss */
   #shipA {
-    margin-bottom: -178px;
-    width: 45px;
+    margin-left: -53px;
+    width: 50px;
+    top: 192px;
+    -moz-animation: shipA-anim-desktop 8s 1 ease-in-out;
+    -webkit-animation: shipA-anim-desktop 8s 1 ease-in-out;
+    animation: shipA-anim-desktop 8s 1 ease-in-out;
+  }
+}
+@media only screen and (max-width: 350px) {
+  /* line 86, ../sass/_main.scss */
+  #shipA {
+    margin-left: -53px;
+    top: 183px;
+    -moz-animation: shipA-anim-small 5s 1 ease-in-out;
+    -webkit-animation: shipA-anim-small 5s 1 ease-in-out;
+    animation: shipA-anim-small 5s 1 ease-in-out;
   }
 }
 
-/* line 80, ../sass/_main.scss */
+/* line 116, ../sass/_main.scss */
+#shipOverlap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background: transparent;
+}
+
+/* line 125, ../sass/_main.scss */
 #content {
   max-width: 1000px;
   margin: auto;
@@ -168,52 +226,52 @@ html, body {
   flex-direction: row;
 }
 @media only screen and (max-width: 899px) {
-  /* line 80, ../sass/_main.scss */
+  /* line 125, ../sass/_main.scss */
   #content {
     flex-direction: column;
   }
 }
-/* line 89, ../sass/_main.scss */
+/* line 134, ../sass/_main.scss */
 #content * {
   z-index: 5;
 }
 
-/* line 94, ../sass/_main.scss */
+/* line 139, ../sass/_main.scss */
 #player {
   width: 300px;
 }
 @media only screen and (max-width: 899px) {
-  /* line 94, ../sass/_main.scss */
+  /* line 139, ../sass/_main.scss */
   #player {
     margin: auto;
   }
 }
 @media only screen and (max-width: 350px) {
-  /* line 94, ../sass/_main.scss */
+  /* line 139, ../sass/_main.scss */
   #player {
     width: 100%;
   }
 }
 @media only screen and (min-width: 900px) {
-  /* line 105, ../sass/_main.scss */
+  /* line 150, ../sass/_main.scss */
   #player iframe {
     width: 100%;
   }
 }
 @media only screen and (max-width: 899px) {
-  /* line 105, ../sass/_main.scss */
+  /* line 150, ../sass/_main.scss */
   #player iframe {
     width: auto;
   }
 }
 @media only screen and (max-width: 350px) {
-  /* line 105, ../sass/_main.scss */
+  /* line 150, ../sass/_main.scss */
   #player iframe {
     width: 100%;
   }
 }
 
-/* line 118, ../sass/_main.scss */
+/* line 163, ../sass/_main.scss */
 #storyline {
   background-color: rgba(0, 0, 0, 0.4);
   -moz-border-radius: 4px;
@@ -221,39 +279,39 @@ html, body {
   border-radius: 4px;
 }
 @media only screen and (min-width: 900px) {
-  /* line 118, ../sass/_main.scss */
+  /* line 163, ../sass/_main.scss */
   #storyline {
     max-width: 70%;
   }
 }
 
 @media only screen and (min-width: 900px) {
-  /* line 126, ../sass/_main.scss */
+  /* line 171, ../sass/_main.scss */
   .marginStoryline {
     margin-left: 300px;
   }
 }
 
-/* line 132, ../sass/_main.scss */
+/* line 177, ../sass/_main.scss */
 article {
   color: #ddd;
   font-weight: 400;
   letter-spacing: 0.5px;
 }
-/* line 136, ../sass/_main.scss */
+/* line 181, ../sass/_main.scss */
 article p {
   margin: 10px;
   text-align: left;
 }
 @media only screen and (max-width: 350px) {
-  /* line 136, ../sass/_main.scss */
+  /* line 181, ../sass/_main.scss */
   article p {
     margin: 3px;
   }
 }
 
 @media only screen and (min-width: 900px) {
-  /* line 146, ../sass/_main.scss */
+  /* line 191, ../sass/_main.scss */
   .floating {
     position: fixed;
     top: 20px;
@@ -387,5 +445,53 @@ article p {
   98.5% {
     -webkit-filter: blur(0px);
     filter: blur(0px);
+  }
+}
+@-moz-keyframes shipA-anim-desktop {
+  from {
+    top: 120%;
+  }
+  to {
+    top: 192px;
+  }
+}
+@-webkit-keyframes shipA-anim-desktop {
+  from {
+    top: 120%;
+  }
+  to {
+    top: 192px;
+  }
+}
+@keyframes shipA-anim-desktop {
+  from {
+    top: 120%;
+  }
+  to {
+    top: 192px;
+  }
+}
+@-moz-keyframes shipA-anim-small {
+  from {
+    top: 120%;
+  }
+  to {
+    top: 180px;
+  }
+}
+@-webkit-keyframes shipA-anim-small {
+  from {
+    top: 120%;
+  }
+  to {
+    top: 180px;
+  }
+}
+@keyframes shipA-anim-small {
+  from {
+    top: 120%;
+  }
+  to {
+    top: 180px;
   }
 }
