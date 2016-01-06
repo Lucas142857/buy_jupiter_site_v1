@@ -7,6 +7,8 @@
 @import "partials/mixins";
 
 $anim-desktop: shipA-anim-desktop 8s 1 ease-in-out;
+$flag-width: 24px;
+$flag-height: 18px;
 
 * {
   text-align: center;
@@ -113,15 +115,6 @@ body::-webkit-scrollbar-thumb
   }
 }
 
-#shipOverlap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 150%;
-  background: rgba(0,0,0,0);
-}
-
 #content {
   max-width: 1000px;
   margin: auto;
@@ -166,6 +159,40 @@ body::-webkit-scrollbar-thumb
   @include bp-large {
     max-width: 70%;
   }
+}
+
+.flags {
+  margin-bottom: 24px;
+  list-style-type: none;
+  
+  a {
+    display: block;
+    width: $flag-width;
+    height: $flag-height;
+    margin-right: 7px;
+  }
+  
+  a, li {
+    float: right;
+  }
+}
+
+.flag {
+  background-size: $flag-width $flag-height !important;
+  opacity: 0.35;
+  transition: opacity 0.2s ease-in-out;
+  
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.fr {
+  background: url("../img/fr.svg");
+}
+
+.en {
+  background: url("../img/gb.svg");
 }
 
 .marginStoryline {

@@ -1,0 +1,4 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule	fr$	index.html	[L]
+RewriteRule	en$	index.html	[L]
