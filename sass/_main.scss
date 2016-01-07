@@ -162,8 +162,13 @@ body::-webkit-scrollbar-thumb
 }
 
 .flags {
-  margin-bottom: 24px;
+  height: $flag-height;
   list-style-type: none;
+  
+  @include bp-medium {
+    margin: auto;
+    width: 70px;
+  }
   
   a {
     display: block;
