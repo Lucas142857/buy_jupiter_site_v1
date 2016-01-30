@@ -157,16 +157,19 @@ body::-webkit-scrollbar-thumb
   background-color: rgba(0,0,0,0.4);
   @include border-radius(4px);
   @include bp-large {
-    max-width: 70%;
+    max-width: 68%;
+    margin-left: 20px;
   }
 }
 
 .flags {
-  height: $flag-height;
+  height: 23px;
   list-style-type: none;
+  margin-top: 7px;
   
   @include bp-medium {
     margin: auto;
+    margin-top: 7px;
     width: 70px;
   }
   
@@ -202,20 +205,26 @@ body::-webkit-scrollbar-thumb
 
 .marginStoryline {
   @include bp-large {
-    margin-left: 300px;
+    margin-left: 320px !important;
   }
 }
 
 article {
   color: #ddd;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 0.5px;
+  line-height: 1.2em;
+  
+  @include bp-small {
+    text-align: justify;
+  }
+  
   p {
-    margin: 10px;
+    margin: 17px;
     text-align: left;
     
     @include bp-small {
-      margin: 3px;
+      text-align: justify;
     }
   }
 }
