@@ -170,7 +170,7 @@ body::-webkit-scrollbar-thumb
   @include bp-medium {
     margin: auto;
     margin-top: 7px;
-    width: 70px;
+    width: 195px;
   }
   
   a {
@@ -201,6 +201,10 @@ body::-webkit-scrollbar-thumb
 
 .en {
   background: url("../img/gb.svg");
+}
+
+.fb-like {
+  margin-right: 10px;
 }
 
 .marginStoryline {

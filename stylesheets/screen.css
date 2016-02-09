@@ -287,7 +287,7 @@ body::-webkit-scrollbar-thumb {
   .flags {
     margin: auto;
     margin-top: 7px;
-    width: 70px;
+    width: 195px;
   }
 }
 /* line 176, ../sass/_main.scss */
@@ -323,14 +323,19 @@ body::-webkit-scrollbar-thumb {
   background: url("../img/gb.svg");
 }
 
+/* line 206, ../sass/_main.scss */
+.fb-like {
+  margin-right: 10px;
+}
+
 @media only screen and (min-width: 900px) {
-  /* line 206, ../sass/_main.scss */
+  /* line 210, ../sass/_main.scss */
   .marginStoryline {
     margin-left: 320px !important;
   }
 }
 
-/* line 212, ../sass/_main.scss */
+/* line 216, ../sass/_main.scss */
 article {
   color: #ddd;
   font-weight: 200;
@@ -338,25 +343,25 @@ article {
   line-height: 1.2em;
 }
 @media only screen and (max-width: 350px) {
-  /* line 212, ../sass/_main.scss */
+  /* line 216, ../sass/_main.scss */
   article {
     text-align: justify;
   }
 }
-/* line 222, ../sass/_main.scss */
+/* line 226, ../sass/_main.scss */
 article p {
   margin: 17px;
   text-align: left;
 }
 @media only screen and (max-width: 350px) {
-  /* line 222, ../sass/_main.scss */
+  /* line 226, ../sass/_main.scss */
   article p {
     text-align: justify;
   }
 }
 
 @media only screen and (min-width: 900px) {
-  /* line 232, ../sass/_main.scss */
+  /* line 236, ../sass/_main.scss */
   .floating {
     position: fixed;
     top: 20px;

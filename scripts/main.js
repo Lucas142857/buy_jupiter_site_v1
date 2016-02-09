@@ -19,7 +19,7 @@ $(document).ready(function() {
   
   $('#wrapper').delay(7500).fadeIn(1600, function() {
     $('body').css('overflow', 'auto');
-    $('iframe').attr('src', 'http://bandcamp.com/EmbeddedPlayer/track=4293759057/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/');
+    $('iframe[data-social="bandcamp"]').attr('src', 'http://bandcamp.com/EmbeddedPlayer/track=4293759057/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/');
   });
   
   $(window).scroll(function() {
