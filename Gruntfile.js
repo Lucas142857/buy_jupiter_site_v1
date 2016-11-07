@@ -52,14 +52,14 @@ module.exports = function(grunt) {
         },
         
         clean: {
-            docs: ['dist/**/*', 'dist/.htaccess']
+            dist: ['dist/**/*', 'dist/.htaccess']
         },
         
         // Copy all needed files to 'dist' folder
         copy: {
             func_files: {
                 files: [
-                    { expand: true, src: ['.htaccess', '*.departure', 'index.html'], dest: 'dist' }
+                    { expand: true, src: ['.htaccess', 'storyline/*.*', 'index.html'], dest: 'dist' }
                 ]
             },
             img_files: {

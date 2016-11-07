@@ -1,7 +1,7 @@
 /* Main */
 
 function load(lang) {
-  $.get(lang+".departure", function(data) {
+  $.get("storyline/"+lang+".departure", function(data) {
     $('#storyline_content').html(data);
   });
 }
