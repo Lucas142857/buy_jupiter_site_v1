@@ -114,11 +114,9 @@ body::-webkit-scrollbar-thumb {
   margin: 0;
   padding: 3px 25px;
   padding-bottom: 25px;
-  /*background-image: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgba(46, 66, 65, 0.5)), linear-gradient(to top right, rgba(0,0,0,0.3), rgba(255, 0, 0, 0.2)), url("../img/bg_departure.jpg");*/
   background-image: url("../img/siteback.jpg");
   background-position: 0 0;
   background-attachment: fixed;
-  /*background-size: 120% 100%;*/
   background-repeat: repeat-x;
   font-family: 'Open Sans', sans-serif;
   /*@include transition(background-position 3s cubic-bezier(.15,.9,.59,.98));*/
@@ -136,16 +134,16 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-/* line 69, ../sass/_main.scss */
+/* line 67, ../sass/_main.scss */
 #logo {
   padding: 1em;
 }
-/* line 71, ../sass/_main.scss */
+/* line 69, ../sass/_main.scss */
 #logo p {
   margin-top: 5px;
 }
 
-/* line 76, ../sass/_main.scss */
+/* line 74, ../sass/_main.scss */
 #logo img {
   opacity: 0.9;
   max-width: 100%;
@@ -155,19 +153,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-width: 450px) {
-  /* line 82, ../sass/_main.scss */
+  /* line 80, ../sass/_main.scss */
   #imgDep {
     width: 220px;
   }
 }
 
-/* line 88, ../sass/_main.scss */
+/* line 86, ../sass/_main.scss */
 #shipA {
   position: absolute;
   left: 50%;
 }
 @media only screen and (min-width: 900px) {
-  /* line 88, ../sass/_main.scss */
+  /* line 86, ../sass/_main.scss */
   #shipA {
     margin-left: -68px;
     top: 192px;
@@ -177,7 +175,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media only screen and (max-width: 899px) {
-  /* line 88, ../sass/_main.scss */
+  /* line 86, ../sass/_main.scss */
   #shipA {
     margin-left: -68px;
     top: 192px;
@@ -187,7 +185,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media only screen and (max-width: 450px) {
-  /* line 88, ../sass/_main.scss */
+  /* line 86, ../sass/_main.scss */
   #shipA {
     margin-left: -53px;
     width: 50px;
@@ -198,7 +196,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media only screen and (max-width: 350px) {
-  /* line 88, ../sass/_main.scss */
+  /* line 86, ../sass/_main.scss */
   #shipA {
     margin-left: -53px;
     top: 183px;
@@ -208,7 +206,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-/* line 118, ../sass/_main.scss */
+/* line 116, ../sass/_main.scss */
 #content {
   max-width: 1000px;
   margin: auto;
@@ -216,52 +214,52 @@ body::-webkit-scrollbar-thumb {
   flex-direction: row;
 }
 @media only screen and (max-width: 899px) {
-  /* line 118, ../sass/_main.scss */
+  /* line 116, ../sass/_main.scss */
   #content {
     flex-direction: column;
   }
 }
-/* line 127, ../sass/_main.scss */
+/* line 125, ../sass/_main.scss */
 #content * {
   z-index: 5;
 }
 
-/* line 132, ../sass/_main.scss */
+/* line 130, ../sass/_main.scss */
 #player {
   width: 300px;
 }
 @media only screen and (max-width: 899px) {
-  /* line 132, ../sass/_main.scss */
+  /* line 130, ../sass/_main.scss */
   #player {
     margin: auto;
   }
 }
 @media only screen and (max-width: 350px) {
-  /* line 132, ../sass/_main.scss */
+  /* line 130, ../sass/_main.scss */
   #player {
     width: 100%;
   }
 }
 @media only screen and (min-width: 900px) {
-  /* line 143, ../sass/_main.scss */
+  /* line 141, ../sass/_main.scss */
   #player iframe {
     width: 100%;
   }
 }
 @media only screen and (max-width: 899px) {
-  /* line 143, ../sass/_main.scss */
+  /* line 141, ../sass/_main.scss */
   #player iframe {
     width: auto;
   }
 }
 @media only screen and (max-width: 350px) {
-  /* line 143, ../sass/_main.scss */
+  /* line 141, ../sass/_main.scss */
   #player iframe {
     width: 100%;
   }
 }
 
-/* line 156, ../sass/_main.scss */
+/* line 154, ../sass/_main.scss */
 #storyline {
   background-color: rgba(0, 0, 0, 0.4);
   -moz-border-radius: 4px;
@@ -269,73 +267,73 @@ body::-webkit-scrollbar-thumb {
   border-radius: 4px;
 }
 @media only screen and (min-width: 900px) {
-  /* line 156, ../sass/_main.scss */
+  /* line 154, ../sass/_main.scss */
   #storyline {
     max-width: 68%;
     margin-left: 20px;
   }
 }
 
-/* line 165, ../sass/_main.scss */
+/* line 163, ../sass/_main.scss */
 .flags {
   height: 23px;
   list-style-type: none;
   margin-top: 7px;
 }
 @media only screen and (max-width: 899px) {
-  /* line 165, ../sass/_main.scss */
+  /* line 163, ../sass/_main.scss */
   .flags {
     margin: auto;
     margin-top: 7px;
     width: 195px;
   }
 }
-/* line 176, ../sass/_main.scss */
+/* line 174, ../sass/_main.scss */
 .flags a {
   display: block;
   width: 24px;
   height: 18px;
   margin-right: 7px;
 }
-/* line 183, ../sass/_main.scss */
+/* line 181, ../sass/_main.scss */
 .flags a, .flags li {
   float: right;
 }
 
-/* line 188, ../sass/_main.scss */
+/* line 186, ../sass/_main.scss */
 .flag {
   background-size: 24px 18px !important;
   opacity: 0.35;
   transition: opacity 0.2s ease-in-out;
 }
-/* line 193, ../sass/_main.scss */
+/* line 191, ../sass/_main.scss */
 .flag:hover {
   opacity: 0.85;
 }
 
-/* line 198, ../sass/_main.scss */
+/* line 196, ../sass/_main.scss */
 .fr {
   background: url("../img/fr.svg");
 }
 
-/* line 202, ../sass/_main.scss */
+/* line 200, ../sass/_main.scss */
 .en {
   background: url("../img/gb.svg");
 }
 
-/* line 206, ../sass/_main.scss */
+/* line 204, ../sass/_main.scss */
 .fb-like {
   margin-right: 10px;
 }
 
 @media only screen and (min-width: 900px) {
-  /* line 210, ../sass/_main.scss */
+  /* line 208, ../sass/_main.scss */
   .marginStoryline {
     margin-left: 320px !important;
   }
 }
 
-/* line 216, ../sass/_main.scss */
+/* line 214, ../sass/_main.scss */
 article {
   color: #ddd;
   font-weight: 200;
@@ -343,25 +341,25 @@ article {
   line-height: 1.2em;
 }
 @media only screen and (max-width: 350px) {
-  /* line 216, ../sass/_main.scss */
+  /* line 214, ../sass/_main.scss */
   article {
     text-align: justify;
   }
 }
-/* line 226, ../sass/_main.scss */
+/* line 224, ../sass/_main.scss */
 article p {
   margin: 17px;
   text-align: left;
 }
 @media only screen and (max-width: 350px) {
-  /* line 226, ../sass/_main.scss */
+  /* line 224, ../sass/_main.scss */
   article p {
     text-align: justify;
   }
 }
 
 @media only screen and (min-width: 900px) {
-  /* line 236, ../sass/_main.scss */
+  /* line 234, ../sass/_main.scss */
   .floating {
     position: fixed;
     top: 20px;

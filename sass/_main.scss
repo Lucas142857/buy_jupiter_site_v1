@@ -49,15 +49,11 @@ body::-webkit-scrollbar-thumb
   margin: 0;
   padding: 3px 25px;
   padding-bottom: 25px;
-  /*background-image: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgba(46, 66, 65, 0.5)), linear-gradient(to top right, rgba(0,0,0,0.3), rgba(255, 0, 0, 0.2)), url("../img/bg_departure.jpg");*/
   background-image: url("../img/siteback.jpg");
   background-position: 0 0;
   background-attachment: fixed;
-  /*background-size: 120% 100%;*/
   background-repeat: repeat-x;
   font-family: 'Open Sans', sans-serif;
-  /*@include transition(background-position 3s cubic-bezier(.15,.9,.59,.98));*/
-  /*@include transition(background-position 3s ease-in-out);*/
   @include animation(bg-anim 145s linear infinite);
   @include bp-small {
     padding-left: 8px;

@@ -1,0 +1,29 @@
+{
+  "name": "buy_jupiter_website",
+  "version": "1.0.0",
+  "description": "Buy Jupiter's Official Website",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas142857/buy_jupiter_site_v1.git"
+  },
+  "keywords": [
+    "Buy",
+    "Jupiter",
+    "website",
+    "Departure"
+  ],
+  "author": "Lucas Delobelle",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-text-replace": "^0.4.0",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
